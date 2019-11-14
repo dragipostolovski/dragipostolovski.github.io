@@ -1,31 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	
-	<title>Dragi Postolovski</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<title>Dragi Postolovski | Wordpress Developer</title>
 
 </head>
 
 <body>
+    <div class="container-fluid">
 
-	<div class="jumbotron">
+        <!-- Header Section -->
+        <section class="header">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center" style="height: 100vh;">
+                    <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center fadeInUp ftco-animated">
+                        <div class="text text-center" style="margin: 0 auto;">
+                            <span class="subheading">Hello! I am</span>
+                            <h1>Dragi Postolovski</h1>
+                            <h2>I'm a Wordpress <span class="txt-rotate"></span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mouse">
+                <a href="javascript:void(0)" class="mouse-icon">
+                    <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+                </a>
+            </div>
+        </section>
+        <!-- End Header Section -->
 
-		<h1 class="display-4">Dragi Postolovski</h1>
-		<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <!-- About Section -->
+        <section class="about">
 
-		<hr class="my-4">
+        </section>
+        <!-- End About Section -->
 
-		<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-		<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-
-	</div>
-
+    </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+<script>
+    $(function(){
+        let about = $(".mouse a");
+        let rotate = $(".txt-rotate");
+
+        rotate.typed({
+            strings: ["<span>Developer.</span>", "<span>Lover.</span>", "<span>Expert.</span>"],
+            typeSpeed: 100,
+            backDelay: 2500,
+            loop: true
+        });
+
+        about.click(function() {
+            let cls = $(this).closest("section").next().offset().top;
+
+            $("html, body").animate({scrollTop: cls}, 1500);
+        });
+    });
+</script>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 1.5;
+        color: #000;
+        margin-top: 0;
+    }
+
+    .subheading {
+        font-size: 22px;
+        color: #3e64ff;
+        letter-spacing: 4px;
+        line-height: 1.8;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        opacity: .1;
+        width: 50%;
+        background: #3e64ff;
+    }
+
+    .txt-rotate span {
+        color: #3e64ff;
+    }
+
+    .mouse {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 120px;
+        z-index: 2;
+    }
+
+    .mouse-icon {
+        width: 70px;
+        height: 70px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .mouse-wheel {
+        height: 70px;
+        margin: 12px auto 0;
+        display: block;
+        width: 30px;
+        background: 0 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-animation: 1.6s ease infinite wheel-up-down;
+        -moz-animation: 1.6s ease infinite wheel-up-down;
+        animation: 1.6s ease infinite wheel-up-down;
+        color: #3e64ff;
+        font-size: 30px;
+    }
+
+    .ion-ios-arrow-round-down:before {
+        content: "\f118";
+    }
+
+    .mouse-icon:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        background: #edf0ff;
+        z-index: -1;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .about {
+        height: 100vh;
+    }
+</style>
 
 </html>
