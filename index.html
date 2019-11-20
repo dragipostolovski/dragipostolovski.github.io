@@ -29,13 +29,40 @@
                     </div>
                 </div>
             </div>
-<!--            <div class="mouse">-->
-<!--                <a href="javascript:void(0)" class="mouse-icon">-->
-<!--                    <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>-->
-<!--                </a>-->
-<!--            </div>-->
+            <div class="mouse">
+                <a href="javascript:void(0)" class="mouse-icon">
+                    <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+                </a>
+            </div>
         </section>
         <!-- End Header Section -->
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container" style="height: 100%;">
+                <div class="row ">
+                    <div class="col-sm-6">
+                        <img class="profile-img" src="img/profile.jpg" alt="Dragi Postolovski">
+                    </div>
+                    <div class="col-sm-6 pl-md-5 py-5">
+                        <h1>About Me</h1>
+                        <p>Expert-level PHP developer specializing in Wordpress. I handle all facets of website creation -
+                            initial branding and website design, development of proprietary functionality and features, server
+                            administration and hosting, search engine optimization, and marketing consulting. I have worked
+                            on a lot of projects for the past several years, and have substantial experience working directly
+                            with project owners and executives across a wide range of industries.</p>
+                        <ul class="about-info mt-4 px-md-0 px-2">
+                            <li class="d-flex"><span>Name:</span> <span>Dragi Postolovski</span></li>
+                            <li class="d-flex"><span>Date of birth:</span> <span>April 14, 1989</span></li>
+                            <li class="d-flex"><span>Email:</span> <span>dpostolovskimk@gmail.com</span></li>
+                            <li class="d-flex"><span>LinkedIn: </span> <span><a target="_blank" href="https://www.linkedin.com/in/dragipostolovski">linkedin.com/in/dragipostolovski</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
 
     </div>
 </body>
@@ -173,6 +200,33 @@
         height: 550px;
     }
 
+    .about-info {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .about-info li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+
+    ul.about-info li span:first-child{
+        font-weight: 600;
+        color: #000000;
+        width: 130px;
+    }
+
+    ul.about-info li span {
+        width: calc(100% - 130px);
+    }
+
+    .about .profile-img {
+        float: right;
+        width: 100%;
+        height: auto;
+    }
 </style>
 
 </html>
