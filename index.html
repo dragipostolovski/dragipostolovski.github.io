@@ -28,13 +28,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="mouse">
-                        <a href="javascript:void(0)" class="mouse-icon">
-                            <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-                        </a>
-                    </div>
-                </div>
             </div>
         </section>
         <!-- End Header Section -->
@@ -86,12 +79,6 @@
             typeSpeed: 100,
             backDelay: 2500,
             loop: true
-        });
-
-        about.click(function() {
-            let cls = $(this).closest("section").next().offset().top;
-
-            $("html, body").animate({scrollTop: cls}, 1500);
         });
     });
 </script>
