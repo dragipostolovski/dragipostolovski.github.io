@@ -50,7 +50,7 @@ a:hover {
 }
 
 .header-top {
-	background-color: #525659;
+	background-color: #00244a;
 }
 
 .header-top-details {
@@ -213,6 +213,10 @@ a:hover {
 	.unique .description .col-xl-6 {
 		margin-bottom: 16px;
 	}
+	
+	.key-strengths {
+		margin-top: 25px;
+	}
 
 	.key-strengths .container {
 		margin-bottom: 10px;
@@ -265,6 +269,10 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+	body {
+		margin: 0px;
+	}
+
 	.header-top-details {
     	padding: 15px 0px 15px 0px;
 	}
@@ -273,11 +281,23 @@ a:hover {
 		margin: 0px 10px 0px 10px;
 		margin-bottom: 16px;
     }
+
+    .unique .description {
+		margin-right: 0px;
+	}
 }
 
 @media screen and (max-width: 648px) {
 	body {
-    	margin: 0;
+		margin: 0px;
+	}
+
+	.header-top .header-info-right {
+		display: none;
+	}
+
+	.unique .description {
+		margin-right: 0px;
 	}
 }
 
