@@ -1,0 +1,140 @@
+body {
+	margin: 20px;
+}
+
+h1 {
+	color: #fff;
+	font-size: 36px;
+	letter-spacing: 1.5px;
+    margin: 0;
+    font-weight: 600;
+}
+
+h2 {
+	color: #343a40;
+	font-size: 32px;
+	letter-spacing: 1.5px;
+    margin: 0;
+    font-weight: 600;
+}
+
+h4 {
+	margin: 0;
+	font-size: 16px;
+}
+
+p {
+	letter-spacing: 0.8px;
+    font-size: 15px;
+}
+
+a {
+	color: #3d18ab;
+}
+
+a:hover {
+	color: #5c3fb5;
+	text-decoration: none;
+}
+
+.row-spacer {
+	margin-top: 15px
+}
+
+.row-spacer-double {
+	margin-top: 45px;
+}
+
+.header-top {
+	background-color: #525659;
+}
+
+.header-top-details {
+	padding: 15px 0 15px 0;
+}
+
+.full-name {
+	display: block;
+}
+
+.job-title {
+	display: block;
+	font-size: 22px;
+    font-weight: 100;
+}
+
+/* Header Role */
+.header-role {
+	
+}
+
+.column-color {
+	background-color: #eaeaea;
+	padding: 20px;
+}
+
+.role-gouped {
+	margin-left: 20px
+}
+
+.role-header {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0px;
+    display: block;
+    color: #495057;
+}
+
+.role-title {
+	display: block;
+	margin: 4px 0 4px 0;
+    font-size: 22px;
+    color: #7b7b7b;
+    letter-spacing: 1.3px;
+}
+
+.role-details {
+	display: block;
+	color: #da00d2;
+}
+
+.header-role img, .who-am-i img {
+	width: 70px;
+}
+
+/* Who Am I*/
+.who-am-i {
+	background-color: #eaeaea;
+	text-align: center;
+	padding: 20px;
+}
+
+.column-color-purple {
+	color: #da00d2;
+}
+
+.who-am-i .role-details {
+	padding: 8px;
+    color: #6c757d;
+    font-size: 15px;
+}
+
+.column-color-white {
+	background-color: #fff;
+    padding: 25px;
+}
+
+.column-color-white h4 {
+	padding: 20px;
+}
+
+.who-am-i .key-strengths h4 {
+	border-radius: 21px;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+.key-strengths-bold {
+	color: #da00d2;
+    font-weight: 600;
+}
