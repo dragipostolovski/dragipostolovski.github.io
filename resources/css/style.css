@@ -289,7 +289,7 @@ a:hover {
 
 @media screen and (max-width: 648px) {
 	body {
-		margin: 0px;
+		margin: 15px;
 	}
 
 	.header-top .header-info-right {
