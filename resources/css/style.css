@@ -169,3 +169,120 @@ a:hover {
 	color: #fff;
 	margin: 0;
 }
+
+
+/* 1000 */
+
+@media screen and (min-width: 1000px) {
+	.who-am-i .col-xl-4 {
+		flex: 0 0 33.333333%;
+    	max-width: 33.333333%;
+	}
+
+	.key-strengths .col-xl-2 {
+		flex: 0 0 16.666667%;
+    	max-width: 16.666667%;
+	}
+
+	.who-am-i .key-strengths h4 {
+		background-color: transparent;
+	}
+	
+	.unique .description .col-xl-6 {
+		flex: 0 0 50%;
+    	max-width: 50%;
+	}
+
+	.unique .description .column-color {
+		border-radius: 0px 0px 30px 30px;
+	}
+}
+
+@media screen and (max-width: 1040px) {
+	.header-top-details {
+    	padding: 15px 25px 15px 25px;
+	}
+
+	.who-am-i .col-xl-4 {
+		margin: 0px 0px 20px 0;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.unique .description .col-xl-6 {
+		margin-bottom: 16px;
+	}
+
+	.key-strengths .container {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-top-details {
+    	padding: 15px 0px 15px 0px;
+	}
+
+	.who-am-i .col-xl-4 {
+		margin: 0px 0px 20px 0;
+	}
+
+	.key-strengths .container {
+		margin-bottom: 10px;
+	}
+
+	.unique .description .col-xl-6 {
+		margin-bottom: 16px;
+	}
+}
+
+@media screen and (max-width: 810px) {
+	.header-top-details {
+    	padding: 15px 15px 15px 15px;
+	}
+
+	.who-am-i .col-xl-4 {
+		margin: 0px 0px 20px 0;
+	}
+
+	.who-am-i .container, .who-am-i .col-xl-12 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.key-strengths .container {
+		margin-bottom: 10px;
+	}
+
+	.unique .description .col-xl-6 {
+		margin-bottom: 16px;
+	}
+
+	.unique .description .column-color {
+		border-radius: 0px 0px 30px 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header-top-details {
+    	padding: 15px 0px 15px 0px;
+	}
+	
+	.unique .description .col-xl-6 {
+		margin: 0px 10px 0px 10px;
+		margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 648px) {
+	body {
+    	margin: 0;
+	}
+}
+
+@media screen and (max-width: 586px) {
+	.header-top-details {
+    	padding: 15px 15px 15px 15px;
+	}
+}
