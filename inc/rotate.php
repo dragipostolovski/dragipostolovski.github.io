@@ -15,17 +15,17 @@
 </section>
 <script>
 let rotation = 45;
-const circle = document.querySelector('.rotator-circle');
-const nextBtn = document.querySelector('.next-btn');
-const prevBtn = document.querySelector('.prev-btn');
+const rotatorCircle = document.querySelector('.rotator-circle');
+const rotatorNextBtn = document.querySelector('.next-btn');
+const rotatorPrevBtn = document.querySelector('.prev-btn');
 
-nextBtn.addEventListener('click', () => {
+rotatorNextBtn.addEventListener('click', () => {
     rotation += 90;
-    circle.style.transform = `rotate(${rotation}deg)`;
+    rotatorCircle.style.transform = `rotate(${rotation}deg)`;
 });
 
-prevBtn.addEventListener('click', () => {
+rotatorPrevBtn.addEventListener('click', () => {
     rotation -= 90;
-    circle.style.transform = `rotate(${rotation}deg)`;
+    rotatorCircle.style.transform = `rotate(${rotation}deg)`;
 });
 </script>
