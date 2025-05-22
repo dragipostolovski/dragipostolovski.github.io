@@ -1,4 +1,4 @@
-<section id="slider">
+<section id="slider" class="container">
   <div class="slider-wrapper">
     <div class="slide active">
       <h2>PHP</h2>
