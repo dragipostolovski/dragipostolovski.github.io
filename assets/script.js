@@ -1,3 +1,4 @@
+// SLIDER
 const slides = document.querySelectorAll('#slider .slide');
 const dotsContainer = document.querySelector('#slider .slider-dots');
 
@@ -41,3 +42,19 @@ dotsContainer.addEventListener('mouseenter', stopAutoSlide);
 dotsContainer.addEventListener('mouseleave', startAutoSlide);
 
 startAutoSlide();
+
+// ROTATOR
+let rotation = 45;
+const rotatorCircle = document.querySelector('.rotator-circle');
+const rotatorNextBtn = document.querySelector('.next-btn');
+const rotatorPrevBtn = document.querySelector('.prev-btn');
+
+rotatorNextBtn.addEventListener('click', () => {
+    rotation += 90;
+    rotatorCircle.style.transform = `rotate(${rotation}deg)`;
+});
+
+rotatorPrevBtn.addEventListener('click', () => {
+    rotation -= 90;
+    rotatorCircle.style.transform = `rotate(${rotation}deg)`;
+});
