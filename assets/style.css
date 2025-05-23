@@ -137,6 +137,7 @@ body {
     flex-direction: column;
     gap: 60px;
     position: relative;
+    overflow: hidden;
 }
 
 .rotator-circle {
@@ -233,4 +234,71 @@ body {
 .prev-btn:hover,
 .next-btn:hover {
     background-color:rgba(255, 46, 99, .8);
+}
+
+@media (max-width: 1024px) { 
+  .services-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .rotator {
+    margin-top: -315px;
+  }
+
+  .rotator-circle {
+    width: 500px;
+    height: 500px;
+  }
+
+  .rotator-circle-text {
+    font-size: 30px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .rotator {
+    margin-top: -195px;
+  }
+
+  .rotator__inner {
+    gap: 15px;
+  }
+
+  .rotator-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .rotator-circle-text {
+    font-size: 26px;
+    margin-top: -30px;
+  }
+
+  .services-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .rotator {
+    margin-top: -150px;
+  }
+
+  .rotator__inner {
+    gap: 0;
+  }
+
+  .rotator-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .rotator-circle-text {
+    margin-top: -36px;
+    font-size: 16px;
+  }
 }
