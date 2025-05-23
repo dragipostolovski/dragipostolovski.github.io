@@ -125,7 +125,7 @@ body {
 /* ROTATOR */
 .rotator {
     margin-bottom: 30px;
-    margin-top: -340px;
+    margin-top: -375px;
 }
 
 .rotator__inner {
@@ -136,6 +136,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 60px;
+    position: relative;
 }
 
 .rotator-circle {
@@ -182,10 +183,10 @@ body {
 }
 .rotator-circle-center {
     position: absolute;
-    left: 25%;
-    top: 25%;
-    width: 50%;
-    height: 50%;
+    left: 15%;
+    top: 15%;
+    width: 70%;
+    height: 70%;
     border-radius: 50%;
     z-index: 2;
     pointer-events: none;
@@ -193,6 +194,25 @@ body {
     /* background: #fff; */
     opacity: 1;
     background: #18191a;
+}
+.rotator-circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 55px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 2;
+  margin-top: -15px;
+  transition: opacity 0.4s;
+}
+.rotator-circle-text.fade-out {
+  opacity: 0;
+}
+.rotator-circle-text.fade-in {
+  opacity: 1;
 }
 .rotator-controls {
     text-align: center;

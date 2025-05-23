@@ -45,16 +45,39 @@ startAutoSlide();
 
 // ROTATOR
 let rotation = 45;
+let currentIndex = 0;
 const rotatorCircle = document.querySelector('.rotator-circle');
 const rotatorNextBtn = document.querySelector('.next-btn');
 const rotatorPrevBtn = document.querySelector('.prev-btn');
+const rotatorWords = ["PHP", "WordPress", "JavaScript", "Gutenberg", "HTML", "CSS"];
+const centerText = document.querySelector('.rotator-circle-text');
+
+function updateCenterText() {
+  // centerText.textContent = rotatorWords[currentIndex];
+   // Fade out
+   centerText.classList.add('fade-out');
+   setTimeout(() => {
+     centerText.textContent = rotatorWords[currentIndex];
+     centerText.classList.remove('fade-out');
+     centerText.classList.add('fade-in');
+     setTimeout(() => {
+       centerText.classList.remove('fade-in');
+     }, 400);
+   }, 400);
+}
 
 rotatorNextBtn.addEventListener('click', () => {
     rotation += 90;
     rotatorCircle.style.transform = `rotate(${rotation}deg)`;
+
+    currentIndex = (currentIndex + 1) % rotatorWords.length;
+    updateCenterText();
 });
 
 rotatorPrevBtn.addEventListener('click', () => {
     rotation -= 90;
     rotatorCircle.style.transform = `rotate(${rotation}deg)`;
+
+    currentIndex = (currentIndex - 1 + rotatorWords.length) % rotatorWords.length;
+    updateCenterText();
 });
