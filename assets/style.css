@@ -9,6 +9,11 @@ body {
   margin: 0 auto;
 }
 
+.navbar-logo a {
+  color: #ff2e63;
+  text-decoration: none;
+}
+
 #slider {
   background: #18191a;
   border-radius: 16px;
@@ -85,6 +90,10 @@ body {
   padding: 15px;
   color: #fff;
   position: relative;
+}
+
+.-v2 .service-content h2 {
+  margin-left: 0;
 }
 
 .service-circle {
