@@ -1,3 +1,12 @@
+#accordion {
+    background: #18191a;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    padding: 24px 24px 40px 24px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
 .rit-accordion-container {
     display: flex;
     flex-direction: column;

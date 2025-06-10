@@ -1,0 +1,21 @@
+.clover {
+    background: url(../images/Clover.webp) no-repeat center center;
+    background-position: center;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+
+.dp-animation {
+    height: calc(100dvh - 160px);
+    position: relative;
+    background: #18191a;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.dp-animation__content {
+    overflow: hidden;
+    height: 100%;
+}

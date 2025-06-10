@@ -329,7 +329,7 @@ body {
   font-weight: 500;
   transition: color 0.2s;
 }
-.navbar-links li a:hover {
+.navbar-links li a:hover, .navbar-links li a.current {
   color: #ff2e63;
 }
 .navbar-toggle {
